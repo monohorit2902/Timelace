@@ -659,7 +659,7 @@ html{scrollbar-width:thin;scrollbar-color:#5a5f86 #0a0e1c}
 #tl .rw.cur .ti{font-weight:700}
 .nowtag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--grad);color:var(--onacc);border-radius:99px;padding:2px 8px;margin-right:8px;vertical-align:2px}
 /* ---- bottom row of Settings: About · Share & contact · Privacy · Terms ---- */
-#legal{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+#legal{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;font-size:13px}#legal>span:last-of-type{justify-self:end}
 #legal a{color:var(--soft);text-decoration:none}
 #legal a:hover{text-decoration:underline}
 #legal #legmid{flex:none;text-align:center}

@@ -659,7 +659,7 @@ html{scrollbar-width:thin;scrollbar-color:#5a5f86 #0a0e1c}
 #tl .rw.cur .ti{font-weight:700}
 .nowtag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--grad);color:var(--onacc);border-radius:99px;padding:2px 8px;margin-right:8px;vertical-align:2px}
 /* ---- bottom row of Settings: About · Share & contact · Privacy · Terms ---- */
-#legal{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;font-size:13px}#legal>span:last-of-type{justify-self:end}
+#legal{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px}#legal .legsm{font-size:11px;opacity:.8}
 #legal a{color:var(--soft);text-decoration:none}
 #legal a:hover{text-decoration:underline}
 #legal #legmid{flex:none;text-align:center}
@@ -930,7 +930,7 @@ html{scrollbar-width:thin;scrollbar-color:#5a5f86 #0a0e1c}
     <button class="ghost hide" id="instb" type="button" data-i="instl" style="width:100%"></button>
     <div class="setrow" id="gdrow" style="flex-direction:column;align-items:stretch;gap:6px"><span id="gdlb"></span><div class="mute" style="font-size:12px;line-height:1.45" id="gdst"></div><input id="gdcid" class="hide" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="…apps.googleusercontent.com"><div style="display:flex;gap:8px"><button class="ghost" id="gdgo" type="button" style="flex:1"></button><button class="ghost hide" id="gdx" type="button" style="flex:1"></button></div></div>
     <div class="setrow" id="fldrow" style="flex-direction:column;align-items:stretch;gap:6px"><span id="fldlb"></span><div class="mute" style="font-size:12px;line-height:1.45" id="fldst"></div><button class="ghost" id="fldpick" type="button" style="width:100%"></button></div>
-    <div class="setrow" id="legal"><a href="/about">About</a><span id="legmid"></span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span><button class="lnk hide" id="inlink" type="button" data-i="inLink"></button></div>
+    <div class="setrow" id="legal"><span id="legmid"></span><span class="legsm"><a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span></span><button class="lnk hide" id="inlink" type="button" data-i="inLink"></button></div>
     <footer class="cp" data-i="copy"></footer>
   </section>
 </main>

@@ -1,0 +1,10 @@
+# Timelace on Netlify: a static site plus one small sign-in function.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# The function never caches anything and is only for this site.
+[[headers]]
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Cache-Control = "no-store"

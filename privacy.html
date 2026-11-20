@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Timelace</title><meta name="description" content="How Timelace handles your data."><link rel="icon" type="image/png" href="/icon-192.png">
+<style>
+:root{color-scheme:dark;--bg:#0b0b0c;--card:#141416;--line:#2a2a2e;--tx:#ecebe8;--soft:#b8b5ae;--acc:#f3b13e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 Georgia,"Lora","Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:40px 22px 70px}
+.brand{font-size:28px;letter-spacing:.16em;font-weight:700;text-transform:uppercase;margin:0 0 4px}
+.brand a{color:inherit;text-decoration:none}
+h1{font-size:30px;line-height:1.25;margin:28px 0 8px}
+h2{font-size:20px;margin:34px 0 6px}
+p,li{color:var(--soft)}
+strong{color:var(--tx)}
+a{color:var(--acc)}
+ul{padding-left:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:18px 0}
+.back{display:inline-block;margin:0 0 22px;color:var(--soft);text-decoration:none;font-size:15px;border:1px solid var(--line);border-radius:99px;padding:7px 14px}
+.back:hover{color:var(--tx);border-color:var(--soft)}
+.btn{display:inline-block;background:linear-gradient(135deg,#f6c25a,#b8741f);color:#1a1105;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:99px;margin:8px 0}
+nav.foot{margin-top:46px;padding-top:18px;border-top:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+.mute{font-size:14px;color:#8d8a84}
+code{font-size:14px;background:#1d1d20;padding:1px 6px;border-radius:6px}
+</style></head><body><main>
+<a class="back" href="/" onclick="try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}">← Back to Timelace</a>
+<div class="brand"><a href="/">Timelace</a></div>
+
+<h1>Privacy Policy</h1>
+<p class="mute">Effective 19 November 2026</p>
+<div class="card"><strong>In short:</strong> your plans live on your device. If you turn on Google Drive sync, they are also kept in a hidden file in your own Google Drive that only Timelace can open. We keep no copy of your plans, show no ads and do no tracking, and we never sell or share your data. (For closed-app reminders we keep only reminder times, never what the plans are.)</div>
+<h2>1. What stays on your device</h2>
+<p>Everything you enter (plans, people's routines you add, time logs, settings) is saved in your browser's storage on that device. It is not sent to us. Clearing the app's or browser's data deletes it from that device.</p>
+<h2>2. Google Drive sync (optional)</h2>
+<p>If you tap <strong>Connect Google Drive</strong>, Timelace asks Google for one permission: <code>drive.appdata</code>, “see, create and delete its own configuration data in your Google Drive”. This lets Timelace keep one hidden file, <code>timelace-sync.json</code>, in a private app area of your Drive. Timelace <strong>cannot</strong> see, open or change any of your other Drive files.</p>
+<p>That file holds the same plans, people and time logs as the app, so your other devices can show them. It syncs when you open the app and shortly after you change something.</p>
+<p><strong>Staying signed in.</strong> To avoid asking you to sign in every hour, Google gives Timelace a long-lasting sign-in key. It is encrypted and kept only in a cookie on your own device. When the app needs a fresh one-hour pass, a small function on our host sends that key to Google and passes the result back to your device. The key and your data pass through it and are not stored, logged or read by us.</p>
+<p><strong>Google Calendar (optional).</strong> If you tap <strong>Connect Google Calendar</strong>, Timelace asks for the permission <code>calendar.app.created</code>, “make secondary Google calendars, and see, create, change and delete events on them”. Timelace creates one calendar called “Timelace” and keeps it in step with your plans: it adds new plans, updates changed ones and removes deleted ones, with reminders. If you choose, it also adds the schedules of people you saved, with their names. Timelace <strong>cannot</strong> see or change any of your other calendars or events. When you turn it off, you can also remove the Timelace calendar.</p>
+<p><strong>Reminders when the app is closed (optional).</strong> If you allow notifications, your phone keeps its own list of reminders (what and when). Only the reminder <em>times</em> are sent to our host (Cloudflare), together with the anonymous push address your browser gives us and a random device number. No plan names, no text and no account details are sent. At each time, our host sends an empty “wake up” message to your browser, and your phone shows the reminder from its own list. Times are deleted as soon as they have passed, and everything is deleted when you turn this off in Settings.</p>
+<p><strong>Google API Services User Data Policy.</strong> Timelace's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from your Google Drive and the Timelace calendar is used only to show and sync your own plans to you. It is not used for advertising, not sold, not transferred to others, and not read by people, and it is not used to train AI models.</p>
+<h2>3. Files you save</h2>
+<p>Backups, pictures and calendar files you download are saved where you choose (your Downloads, or a “Timelace” folder you pick on your computer). They go nowhere else unless you share them.</p>
+<h2>4. Services we rely on</h2>
+<ul>
+<li><strong>Cloudflare</strong> hosts the website and the sign-in function. Like any web host, it may keep standard technical logs (such as IP address and time of a request) for security and operation.</li>
+<li><strong>Google</strong> provides sign-in and Drive, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+</ul>
+<p>Timelace uses no analytics, no advertising and no tracking cookies. The only cookie is the encrypted sign-in key above, and only if you connect Google Drive.</p>
+<h2>5. Removing your data</h2>
+<ul>
+<li><strong>On a device:</strong> clear Timelace's site data in your browser, or uninstall the app.</li>
+<li><strong>Sync:</strong> in Timelace, open Settings, then Google Drive sync, then <strong>Disconnect</strong>. This deletes the sign-in key and tells Google to cancel the permission. You can also remove access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li><strong>The Drive file:</strong> in Google Drive on the web, open Settings, then Manage apps, find Timelace, and choose <strong>Delete hidden app data</strong>.</li>
+</ul>
+<h2>6. Children</h2>
+<p>Timelace is not directed at children under 13 and does not knowingly collect their information.</p>
+<h2>7. Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+<h2>8. Contact</h2>
+<p>Questions or ideas? Message Timelace on Instagram: <a href="https://www.instagram.com/timelacehere" target="_blank" rel="noopener">@timelacehere</a></p>
+
+<nav class="foot"><a href="/">Open Timelace</a><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="https://www.instagram.com/timelacehere" target="_blank" rel="noopener">Contact</a></nav>
+</main></body></html>
